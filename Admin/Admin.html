@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <h2>Panel Admin AMR-HUMO</h2>
+  <button onclick="logout()">Cerrar sesión</button>
+
+  <h3>Productos</h3>
+  <table id="tablaProductos">
+    <tr><th>Nombre</th><th>Precio</th><th>Stock</th><th>Acciones</th></tr>
+  </table>
+  <form id="formProducto">
+    <input type="text" id="nombreProd" placeholder="Nombre" required>
+    <input type="number" id="precioProd" placeholder="Precio" required>
+    <input type="number" id="stockProd" placeholder="Stock" required>
+    <button type="submit">Agregar / Actualizar</button>
+  </form>
+
+  <h3>Pedidos</h3>
+  <table id="tablaPedidos">
+    <tr><th>Cliente</th><th>Producto</th><th>Cantidad</th><th>Total</th></tr>
+  </table>
+  <script src="admin.js"></script>
+</body>
+</html>

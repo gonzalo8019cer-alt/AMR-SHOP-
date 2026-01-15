@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>AMR-HUMO - Inicio</title>
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="fondo-estrellas"></div>
+
+<div class="bienvenida">
+  <h1 class="titulo-efecto">Bienvenidos a AMR-HUMO</h1>
+  <p class="subtitulo-efecto">Lo mejor para los mejores</p>
+</div>
+
+<div class="login-container">
+  <form id="form-login">
+    <h2>Iniciar sesión</h2>
+    <input type="text" id="usuario" placeholder="Usuario" required>
+    <input type="password" id="password" placeholder="Contraseña" required>
+    <button type="submit">Entrar</button>
+    <p>¿No tienes cuenta? <a href="#" id="registrar-link">Regístrate</a></p>
+  </form>
+
+  <form id="form-registro" class="hidden">
+    <h2>Registro</h2>
+    <input type="text" id="nuevo-usuario" placeholder="Usuario" required>
+    <input type="password" id="nueva-password" placeholder="Contraseña" required>
+    <button type="submit">Registrarse</button>
+    <p>¿Ya tienes cuenta? <a href="#" id="login-link">Iniciar sesión</a></p>
+  </form>
+</div>
+
+<script src="funciones.js"></script>
+</body>
+</html>
